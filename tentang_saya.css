@@ -1,0 +1,252 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+overflow: scroll;
+    margin: 0;
+    background-image: url("backgroynd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.header img {
+    width: 100%; 
+    height: 180px;       
+    object-fit: cover;   
+    display: block;
+}
+.topnav{
+    overflow: hidden;
+    background-color: rgb(199, 11, 124);
+    shape-margin: 0%;
+}
+
+.topnav a {
+float: left;
+display: flow-root;
+color: #f2f2f2;
+text-align: center;
+padding: 16px 20px;
+text-decoration: none;
+font-size: x-large;
+font-style: oblique;
+}
+.topnav a:hover {
+background-color: #4810cb80;
+color: rgb(255, 255, 255);
+font-size: x-large;
+font-style: oblique;
+}
+
+.column {
+float: left;
+padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle {
+    width: 90%;         
+    margin: 0 auto;      
+    float: none;        
+    display: block;      
+}
+
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.footer {
+background-color: #f1f1f1;
+padding: 10px;
+text-align: center;
+}
+
+.click-card {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.click-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.click-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+}
+
+.click-card:hover img {
+    transform: scale(1.05);
+}
+.footer-img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-img img {
+    width: 100%;
+    height: 160px;     
+    object-fit: cover;  
+    display: block;
+    border-radius: 0;   
+    transition: transform 0.3s ease;
+}
+
+.footer-img:hover img {
+    transform: scale(1.03);  
+    cursor: pointer;
+}
+
+.sdgs-title {
+    width: 90%;          
+    margin: 0 auto 20px auto; 
+    display: block; 
+    text-align: justify;
+}
+
+.mini-header {
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 4px 8px;         
+    border-radius: 10px;      
+    font-size: 16px;          
+    font-weight: 700;
+    color: #4a0064;
+    width: fit-content;
+    margin-bottom: 8px;       
+    margin-top: 6px;          
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+.mini-header:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+}
+
+.section-header {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.section-header img {
+    width: 100%;
+    height: 120px; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.section-header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+}
+
+.section-header:hover img {
+    transform: scale(1.05);
+}
+
+.main-title {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 14px 26px;       
+    border-radius: 20px;
+    font-size: 26px;          
+    font-weight: 800;
+    color: #4a0064;
+    width: fit-content;
+    margin: 0 auto 20px auto; 
+    text-align: center;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.20);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.main-title:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 26px rgba(0,0,0,0.28);
+}
+
+.section-header-small {
+    width: 90%;
+    margin: 0 auto 16px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section-header-small img {
+    width: 100%;
+    height: 120px;   
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.section-header-small:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.30);
+}
+
+.section-header-small:hover img {
+    transform: scale(1.05);
+}
+
+p{
+    font-family: "CHERYL";
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "CHERYL";
+    src: url("aksara_komik/AksaraKomik-Regular.otf");
+    
+}
+
+.sdgs-title {
+    background: rgb(199, 11, 124);   
+    backdrop-filter: blur(6px);       
+    -webkit-backdrop-filter: blur(6px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+}
+.center-column {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.center-column {
+    float: none !important;
+}
